@@ -1,50 +1,56 @@
----
-author: Bogdan Sebastijan
-title: Daily-Cal-Fit
-date: "2022-04-01"
-bibliography: "bibliography.bib"
-urlcolor: "blue"
----
+# daily-cal-fit Project
 
-# Daily-Cal-Fit Project
+This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
-## Description of the initial situation
+If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
-Calculating your approximate calorie intake is hard to keep track of.
-We have to use a search engine if we wish to know approx. amount of calories a product contains.
+## Running the application in dev mode
 
-## Current state
+You can run your application in dev mode that enables live coding using:
+```shell script
+./mvnw compile quarkus:dev
+```
 
-* Using a search engine to find every product one by one.
-* Using a search engine to find recipes and filtering mostly by
-  ourselves which recipe would fit our diet plan.
-* Taking notes on a paper/excel, etc.
-* Hard to keep track and will result in losing interest in a week.
+> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
 
-## Assignment
+## Packaging and running the application
 
-* Create an app that works both on IOS and Android.
+The application can be packaged using:
+```shell script
+./mvnw package
+```
+It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
+Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
 
-## Goal
+The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
 
-* keeping track of your calorie intake is easy
-* recipes are easy to keep track of
-    * detailed preparation steps
-    * approx. preparation time
-    * approx. calorie intake, fat, carbs, etc.
-* taking notes of your calorie intake is simple
-* can set up a reminder
-* Calendar view
-* customizable for personal diet of choice
+If you want to build an _über-jar_, execute the following command:
+```shell script
+./mvnw package -Dquarkus.package.type=uber-jar
+```
 
-## Database
+The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
 
-* Through API from a legitimated source.
-* [Postgresql-db](https://www.postgresql.org/)
+## Creating a native executable
 
-## Technology
+You can create a native executable using: 
+```shell script
+./mvnw package -Pnative
+```
 
-* Intellij IDEA
-    * Backend [Quarkus](https://quarkus.io/)
-    * [Docker](https://www.docker.com/)
- 
+Or, if you don't have GraalVM installed, you can run the native executable build in a container using: 
+```shell script
+./mvnw package -Pnative -Dquarkus.native.container-build=true
+```
+
+You can then execute your native executable with: `./target/daily-cal-fit-1.0.0-SNAPSHOT-runner`
+
+If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
+
+## Provided Code
+
+### RESTEasy JAX-RS
+
+Easily start your RESTful Web Services
+
+[Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
