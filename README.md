@@ -35,9 +35,30 @@ ourselves which recipe would fit our diet plan.
 * Calendar view
 * customizable for personal diet of choice
 
+## Functional requirements
+
+* User can create his own diet plan
+* User can choose a preset diet plan
+* User can take notes (his calorie intake of the day, recipe he took for breakfast, etc)
+* User can view recipes
+  * recipe displays approx. kcal amount
+  * recipe displays approx. preparation time
+  * recipe displays preparation steps
+* User can view details of every grocerie in the database
+
+
+## Not functional requirements
+
+* Security
+* Efficency
+* Usability
+* Portability
+* Robustness
+* Reliability
+
 ## Database 
 
-* Through API from a legitimated source.
+* Through API from a reliable source [https://fdc.nal.usda.gov/]
 * [Postgresql-db](https://www.postgresql.org/)
 
 ## Technology
@@ -45,4 +66,5 @@ ourselves which recipe would fit our diet plan.
 * Intellij IDEA
     * Backend [Quarkus](https://quarkus.io/)
     * [Docker](https://www.docker.com/)
- 
+ * Frontend 
+   * Flutter - Dart
