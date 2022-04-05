@@ -6,6 +6,7 @@ class Component {
 - Unit: String
 }
 
+
 enum DataType{
 - Foundation: String
 - Experimental: String
