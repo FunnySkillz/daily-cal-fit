@@ -39,23 +39,24 @@ ourselves which recipe would fit our diet plan.
 
 * User can create his own diet plan
     * User can select/write what he had / will have for breakfast, lunch, dinner, etc.
-    * User can then calculate the approximate calorie intake of the day.
+    * Automatically sums up kcal, protein intake of the day
     * User can chose the MAX and MIN. calorie intake to fit his diet plan. 
 
-* User can choose a preset diet plan
+* User can choose a preset diet plan (preset is created by personal trainer / bodybuilder [N. Jovanovic](https://www.instagram.com/nixazizu89/) )
     * losing weight
     * gaining weight
     * gaining muscle mass 
 
-* User can copy a preset diet plan and then change plan accordingly to fit his personal needs.
+* User can copy a preset diet plan and then change the plan accordingly to fit his personal needs.
 
 * User can take notes (his calorie intake of the day, recipe he took for breakfast, etc)
     * personal notes - what he likes, dislikes, any kind of text notes 
 
 * User can view recipes
-  * recipe displays approx. kcal amount
+  * recipe displays ingredients
   * recipe displays approx. preparation time
   * recipe displays preparation steps
+  * approx. kcal, protein amount, etc
 
 * User can view details of every grocerie in the database
     * per 100g or per Unit (example: 1 Egg - 34g    )
