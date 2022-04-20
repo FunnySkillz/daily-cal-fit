@@ -49,8 +49,10 @@ ourselves which recipe would fit our diet plan.
 
 * User can copy a preset diet plan and then change the plan accordingly to fit his personal needs.
 
-* User can take notes (his calorie intake of the day, recipe he took for breakfast, etc)
-    * personal notes - what he likes, dislikes, any kind of text notes 
+* User can take notes 
+    * personal notes - e.g. what recipes to try for the future 
+    * Gym notes - to keep track of the personal progress
+    * any kind of .txt notes
 
 * User can view recipes
   * recipe displays ingredients
